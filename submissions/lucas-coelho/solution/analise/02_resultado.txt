@@ -1,0 +1,38 @@
+=== A. As categorias parecem sorteio uniforme? (qui-quadrado contra 'todas iguais') ===
+Tipo                                 n= 8469  categorias=5  maior/menor=1.07  p=0.115
+Prioridade                           n= 8469  categorias=4  maior/menor=1.06  p=0.205
+Canal                                n= 8469  categorias=4  maior/menor=1.03  p=0.718
+Status                               n= 8469  categorias=3  maior/menor=1.04  p=0.328
+Nota de satisfacao (so fechados)     n= 2769  categorias=5  maior/menor=1.07  p=0.797
+
+=== B. As colunas de tempo medem tempo? ===
+datas distintas em 'First Response Time': 3 -> [datetime.date(2023, 6, 1) datetime.date(2023, 5, 31)
+ datetime.date(2023, 6, 2)]
+datas distintas em 'Time to Resolution': 3 -> [datetime.date(2023, 6, 1) datetime.date(2023, 5, 31)
+ datetime.date(2023, 6, 2)]
+tickets com resposta E resolucao: 2769
+resolucao ANTES da primeira resposta: 49.3%  (duracao minima -23.2 h, maxima 23.5 h)
+Se fosse tempo real, isso deveria ser ~0%.
+
+=== C. Alguma variavel explica a satisfacao? (so os 2.769 fechados) ===
+nota ~ Ticket Channel                      Kruskal-Wallis               p=0.278
+nota ~ Ticket Priority                     Kruskal-Wallis               p=0.629
+nota ~ Ticket Type                         Kruskal-Wallis               p=0.699
+nota ~ Product Purchased                   Kruskal-Wallis               p=0.667
+nota ~ Customer Gender                     Kruskal-Wallis               p=0.625
+nota ~ duracao resposta->resolucao         Spearman rho=+0.022          p=0.254
+nota ~ hora da 1a resposta                 Spearman rho=-0.040          p=0.033
+nota ~ idade                               Spearman rho=-0.004          p=0.832
+
+8 testes feitos. Com limite de 5%, o esperado por puro acaso e ~0.4 'falso positivo'. Ajuste de Bonferroni: so vale p < 0.0063.
+Testes com p abaixo desse limite: 0
+
+=== D. O tempo depende de canal/prioridade/tipo? (Kruskal-Wallis na duracao) ===
+duracao ~ Ticket Channel   p=0.460  medianas(h)={'Chat': 0.52, 'Email': 0.37, 'Phone': -0.78, 'Social media': 0.35}
+duracao ~ Ticket Priority  p=0.640  medianas(h)={'Critical': 0.35, 'High': 0.07, 'Low': 0.35, 'Medium': -0.3}
+duracao ~ Ticket Type      p=0.919  medianas(h)={'Billing inquiry': 0.11, 'Cancellation request': 0.39, 'Product inquiry': -0.48, 'Refund request': 0.26, 'Technical issue': 0.48}
+
+=== E. O TEXTO da descricao tem relacao com o rotulo? (TF-IDF + regressao logistica, 5 dobras) ===
+prever Ticket Type      pelo texto: acuracia 18.9%  (acaso puro = 20%, 5 classes)
+prever Ticket Priority  pelo texto: acuracia 25.2%  (acaso puro = 25%, 4 classes)
+prever Ticket Channel   pelo texto: acuracia 26.3%  (acaso puro = 25%, 4 classes)

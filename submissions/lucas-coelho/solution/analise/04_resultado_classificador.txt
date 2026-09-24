@@ -1,0 +1,53 @@
+linhas: 47837 -> 47823 (removidos 14 textos com menos de 3 palavras)
+treino: 38258 | teste (nunca visto no treino): 9565
+vocabulario: 83030
+
+MODELO                          acuracia   F1-macro
+Chutar sempre a mais comum        28.5%     0.055
+Regressao logistica               86.5%     0.867
+SVM linear calibrado              86.5%     0.866
+
+MODELO ESCOLHIDO: Regressao logistica
+                       precision    recall  f1-score   support
+
+               Access       0.90      0.88      0.89      1425
+Administrative rights       0.89      0.71      0.79       352
+           HR Support       0.87      0.88      0.88      2182
+             Hardware       0.82      0.88      0.85      2722
+     Internal Project       0.92      0.84      0.88       424
+        Miscellaneous       0.84      0.84      0.84      1412
+             Purchase       0.96      0.89      0.93       493
+              Storage       0.93      0.85      0.88       555
+
+             accuracy                           0.87      9565
+            macro avg       0.89      0.85      0.87      9565
+         weighted avg       0.87      0.87      0.87      9565
+
+
+QUASE-DUPLICATAS (similaridade de cosseno do ticket de teste com o mais parecido do treino):
+  0.0 a 0.5: n= 6147 (64.3% do teste)  acuracia=83.4%
+  0.5 a 0.7: n= 1556 (16.3% do teste)  acuracia=90.0%
+  0.7 a 0.9: n= 1225 (12.8% do teste)  acuracia=93.6%
+  0.9 a 1.0: n=  637 ( 6.7% do teste)  acuracia=95.1%
+  acuracia so nos tickets SEM parecido >=0.9 no treino: 85.9% (n=8928)
+
+CONFIANCA x COBERTURA (auto-roteia se confianca >= limiar; o resto vai pra humano):
+  limiar 0.00: automatiza 100.0%  |  acerta 86.5% do que automatiza
+  limiar 0.50: automatiza 93.6%  |  acerta 89.2% do que automatiza
+  limiar 0.60: automatiza 87.0%  |  acerta 91.5% do que automatiza
+  limiar 0.70: automatiza 80.2%  |  acerta 93.6% do que automatiza
+  limiar 0.80: automatiza 72.3%  |  acerta 95.7% do que automatiza
+  limiar 0.90: automatiza 61.3%  |  acerta 97.3% do que automatiza
+  limiar 0.95: automatiza 51.5%  |  acerta 98.5% do que automatiza
+
+POR CATEGORIA (precisao / recall / n no teste):
+  Access                 precisao=0.90 recall=0.88 n=1425
+  Administrative rights  precisao=0.89 recall=0.71 n=352
+  HR Support             precisao=0.87 recall=0.88 n=2182
+  Hardware               precisao=0.82 recall=0.88 n=2722
+  Internal Project       precisao=0.92 recall=0.84 n=424
+  Miscellaneous          precisao=0.84 recall=0.84 n=1412
+  Purchase               precisao=0.96 recall=0.89 n=493
+  Storage                precisao=0.93 recall=0.85 n=555
+
+feito em 43s. Relatorios em C:\Users\Lucas Makela\Desktop\BackOffice\_Contextos Globais\g4-ai-master\case-002\prototipo\relatorios

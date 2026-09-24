@@ -1,0 +1,45 @@
+LINHAS: 47837 | nulos: {'Document': 0, 'Topic_group': 0}
+
+Categorias (contagem e %):
+                           n     %
+Topic_group                       
+Hardware               13617  28.5
+HR Support             10915  22.8
+Access                  7125  14.9
+Miscellaneous           7060  14.8
+Storage                 2777   5.8
+Purchase                2464   5.2
+Internal Project        2119   4.4
+Administrative rights   1760   3.7
+
+Textos vazios ou curtissimos (<3 palavras): 14
+palavras por ticket: mediana 26.0 | p90 91.0 | max 981
+
+Textos IDENTICOS repetidos: 0 (0.0% das linhas) | textos unicos: 47837
+Grupos de texto igual com categorias DIFERENTES (ruido de rotulo): 0 de 0 grupos
+
+3 exemplos por categoria (primeiros 140 caracteres):
+[Hardware]
+   - account users thursday pm hi guys please log please keep informed outcomes thank re browser si safari ca respect thursday care ca comment ii
+   - extension cord tuesday november pm extension cord requested extension cord received thanks senior developer
+[HR Support]
+   - oracle time reporting proposals for enhancement march proposals enhancement enhance view after selecting code task details automatically pop
+   - access to restricted area thursday july pm restricted area hello please provide restricted area starting july person thank po
+[Access]
+   - issues with access card sent monday february re access card hey thanks for confirmation but card still work checked nothing thanks manager s
+   - license for visual studio license visual studio hi guys automation training urgent license visual studio regards application engineer
+[Miscellaneous]
+   - investigate has been assigned to service improvement task has assigned improvement hello please advise how got assigned improvement figure o
+   - expense report not showing oracle for manager approval sent tuesday november expense report showing for manager approval hello guys we seem 
+[Storage]
+   - your mailbox is almost full wednesday november mailbox almost importance high dear please extend size mailbox thanks wednesday november mail
+   - access to the network shared location wednesday february pm share hi please provide share location infrastructure meeting presentations than
+[Purchase]
+   - to location po report location po report hi kindly asking update po reports add location next location great order which po affected by inac
+   - po thursday november pm po good evening please log installing item please perform receipt thank administrator phone thursday november pm la 
+[Internal Project]
+   - pas project setup contract signed due going she has approve please advise invoicing done by per advice raised commercial friday february pm 
+   - oracle pas new project setup dear please create attached code client appreciate done by tomorrow thank officer
+[Administrative rights]
+   - outlook not starting starting hi please log ticket for help issue with start please assign ticket queue thanks engineer ext
+   - need to install install hello purposes install please let how install regards software engineer blvd floor district

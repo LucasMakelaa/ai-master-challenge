@@ -1,0 +1,20 @@
+FILA SIMULADA: 9565 tickets nunca vistos pelo modelo. Limiar 90%; sempre humano: ['Administrative rights', 'Miscellaneous']
+  roteados sozinhos: 4956 (51.8%)
+  acerto no que foi automatico: 97.4%  -> 130 tickets mal roteados
+  foram pra humano: 4609 (48.2%)
+  acerto do modelo no que foi pra humano (ele ajuda com uma sugestao): 74.9%
+
+De onde vem o 'humano':
+  Access                  1425 tickets, 67.9% roteados sozinhos
+  Administrative rights    352 tickets,  4.3% roteados sozinhos
+  HR Support              2182 tickets, 63.8% roteados sozinhos
+  Hardware                2722 tickets, 56.3% roteados sozinhos
+  Internal Project         424 tickets, 59.9% roteados sozinhos
+  Miscellaneous           1412 tickets,  1.9% roteados sozinhos
+  Purchase                 493 tickets, 81.1% roteados sozinhos
+  Storage                  555 tickets, 66.1% roteados sozinhos
+
+ECONOMIA (premissas, nao medicao). Volume = 30.000 tickets/ano, como no enunciado.
+  triagem manual de 1 min/ticket: poupa 259 h/ano, retrabalho dos erros (10 min cada) 68 h -> liquido 191 h/ano (~1.2 meses de 1 pessoa)
+  triagem manual de 2 min/ticket: poupa 518 h/ano, retrabalho dos erros (10 min cada) 68 h -> liquido 450 h/ano (~2.8 meses de 1 pessoa)
+  triagem manual de 3 min/ticket: poupa 777 h/ano, retrabalho dos erros (10 min cada) 68 h -> liquido 709 h/ano (~4.4 meses de 1 pessoa)

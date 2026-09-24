@@ -66,3 +66,25 @@ sobre a operação real de suporte dele. Não foi escrita pela IA de propósito.
 
 3 execuções de análise/modelo, 1 script por passo, nenhum refeito por erro de código. As correções foram de premissa
 (volume do Dataset 1, natureza das colunas de tempo), não de sintaxe.
+
+## 24/09/2026, noite: fork e envio dos arquivos para a branch
+
+**~17h50, fork.** Com o Lucas logado no GitHub, criei o fork `LucasMakelaa/ai-master-challenge` do repositório
+oficial `Gestao-Quatro-Ponto-Zero/ai-master-challenge` (autorizado por ele) e a branch `submission/lucas-coelho`.
+Corrigi um erro de rota: a cópia que eu lia era o fork de outro candidato, não o repositório oficial.
+
+**Erro 4, envio dos arquivos pela interface web:** 3 dos 5 commits não pegaram na primeira tentativa (cliquei em
+"Commit changes" e naveguei antes de o GitHub processar). Refiz esperando e conferindo cada commit.
+
+**Erro 5, quase abri um Pull Request sem querer:** um clique por coordenada marcou a opção "Create a new branch and
+start a pull request" (o botão virou "Propose changes"). Percebi pela tela, **não confirmei**, voltei para "Commit
+directly to the branch" e passei a validar o estado por script antes de cada commit. Nenhum PR foi aberto.
+Resultado: 5 commits na branch, nenhum Pull Request.
+
+**~19h, contribuição do Lucas (conversa de 3 perguntas).** Fraude era o assunto que tinha que ser manual; antes da
+automatização o que mais consumia tempo era conferir todo saque acima de um valor de corte; erro de roteamento
+aconteceu várias vezes (ramal errado, atendente entendendo errado a dúvida, aposta não paga transferida para o setor de
+saque) e parou depois de organizarem o processo. Escrevi os dois blocos do README só com isso, sem acrescentar nada.
+O número do valor de corte ficou fora do texto público de propósito.
+
+**Pendente:** enviar o README e este log à branch, e o Pull Request, que só o Lucas autoriza.

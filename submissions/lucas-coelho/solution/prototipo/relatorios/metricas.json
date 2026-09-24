@@ -1,0 +1,140 @@
+{
+  "modelos": {
+    "Chutar sempre a mais comum": {
+      "acuracia": 0.2846,
+      "f1_macro": 0.0554
+    },
+    "Regressao logistica": {
+      "acuracia": 0.8652,
+      "f1_macro": 0.8667
+    },
+    "SVM linear calibrado": {
+      "acuracia": 0.8654,
+      "f1_macro": 0.8662
+    }
+  },
+  "escolhido": "Regressao logistica",
+  "quase_duplicatas": [
+    {
+      "faixa": "0.0-0.5",
+      "n": 6147,
+      "%_do_teste": 64.3,
+      "acuracia": 83.4
+    },
+    {
+      "faixa": "0.5-0.7",
+      "n": 1556,
+      "%_do_teste": 16.3,
+      "acuracia": 90.0
+    },
+    {
+      "faixa": "0.7-0.9",
+      "n": 1225,
+      "%_do_teste": 12.8,
+      "acuracia": 93.6
+    },
+    {
+      "faixa": "0.9-1.0",
+      "n": 637,
+      "%_do_teste": 6.7,
+      "acuracia": 95.1
+    }
+  ],
+  "acuracia_sem_quase_duplicata": 0.8591,
+  "cobertura_x_acerto": [
+    {
+      "limiar": 0.0,
+      "cobertura_%": 100.0,
+      "acuracia_auto_%": 86.5,
+      "erros_a_cada_100_auto": 13.5
+    },
+    {
+      "limiar": 0.5,
+      "cobertura_%": 93.6,
+      "acuracia_auto_%": 89.2,
+      "erros_a_cada_100_auto": 10.8
+    },
+    {
+      "limiar": 0.6,
+      "cobertura_%": 87.0,
+      "acuracia_auto_%": 91.5,
+      "erros_a_cada_100_auto": 8.5
+    },
+    {
+      "limiar": 0.7,
+      "cobertura_%": 80.2,
+      "acuracia_auto_%": 93.6,
+      "erros_a_cada_100_auto": 6.4
+    },
+    {
+      "limiar": 0.8,
+      "cobertura_%": 72.3,
+      "acuracia_auto_%": 95.7,
+      "erros_a_cada_100_auto": 4.3
+    },
+    {
+      "limiar": 0.9,
+      "cobertura_%": 61.3,
+      "acuracia_auto_%": 97.3,
+      "erros_a_cada_100_auto": 2.7
+    },
+    {
+      "limiar": 0.95,
+      "cobertura_%": 51.5,
+      "acuracia_auto_%": 98.5,
+      "erros_a_cada_100_auto": 1.5
+    }
+  ],
+  "por_categoria": [
+    {
+      "categoria": "Access",
+      "precisao": 0.899,
+      "recall": 0.885,
+      "n_teste": 1425
+    },
+    {
+      "categoria": "Administrative rights",
+      "precisao": 0.892,
+      "recall": 0.707,
+      "n_teste": 352
+    },
+    {
+      "categoria": "HR Support",
+      "precisao": 0.869,
+      "recall": 0.882,
+      "n_teste": 2182
+    },
+    {
+      "categoria": "Hardware",
+      "precisao": 0.823,
+      "recall": 0.88,
+      "n_teste": 2722
+    },
+    {
+      "categoria": "Internal Project",
+      "precisao": 0.924,
+      "recall": 0.837,
+      "n_teste": 424
+    },
+    {
+      "categoria": "Miscellaneous",
+      "precisao": 0.838,
+      "recall": 0.838,
+      "n_teste": 1412
+    },
+    {
+      "categoria": "Purchase",
+      "precisao": 0.963,
+      "recall": 0.892,
+      "n_teste": 493
+    },
+    {
+      "categoria": "Storage",
+      "precisao": 0.927,
+      "recall": 0.845,
+      "n_teste": 555
+    }
+  ],
+  "n_treino": 38258,
+  "n_teste": 9565
+}

@@ -1,0 +1,35 @@
+{
+  "n_fila": 9565,
+  "limiar": 0.9,
+  "sempre_humano": [
+    "Administrative rights",
+    "Miscellaneous"
+  ],
+  "cobertura_auto": 0.5181,
+  "acerto_auto": 0.9738,
+  "mal_roteados": 130,
+  "acerto_no_humano": 0.7485,
+  "economia_premissas": [
+    {
+      "min_triagem_manual": 1,
+      "horas_poupadas_ano": 259,
+      "horas_retrabalho_ano": 68,
+      "liquido_horas_ano": 191,
+      "equivale_meses_de_1_pessoa(160h)": 1.2
+    },
+    {
+      "min_triagem_manual": 2,
+      "horas_poupadas_ano": 518,
+      "horas_retrabalho_ano": 68,
+      "liquido_horas_ano": 450,
+      "equivale_meses_de_1_pessoa(160h)": 2.8
+    },
+    {
+      "min_triagem_manual": 3,
+      "horas_poupadas_ano": 777,
+      "horas_retrabalho_ano": 68,
+      "liquido_horas_ano": 709,
+      "equivale_meses_de_1_pessoa(160h)": 4.4
+    }
+  ]
+}

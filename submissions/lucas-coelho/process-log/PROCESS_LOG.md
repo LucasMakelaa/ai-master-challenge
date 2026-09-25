@@ -81,10 +81,19 @@ start a pull request" (o botão virou "Propose changes"). Percebi pela tela, **n
 directly to the branch" e passei a validar o estado por script antes de cada commit. Nenhum PR foi aberto.
 Resultado: 5 commits na branch, nenhum Pull Request.
 
-**~19h, contribuição do Lucas (conversa de 3 perguntas).** Fraude era o assunto que tinha que ser manual; antes da
+**~18h20, contribuição do Lucas (conversa de 3 perguntas).** Fraude era o assunto que tinha que ser manual; antes da
 automatização o que mais consumia tempo era conferir todo saque acima de um valor de corte; erro de roteamento
 aconteceu várias vezes (ramal errado, atendente entendendo errado a dúvida, aposta não paga transferida para o setor de
 saque) e parou depois de organizarem o processo. Escrevi os dois blocos do README só com isso, sem acrescentar nada.
 O número do valor de corte ficou fora do texto público de propósito.
 
-**Pendente:** enviar o README e este log à branch, e o Pull Request, que só o Lucas autoriza.
+**19h36, README final e este log enviados à branch** (2 commits, direto na branch, sem abrir PR). Conferi no GitHub que o
+README publicado não tinha mais nenhum marcador de "preencher".
+
+**20h13, Pull Request #157 aberto**, depois do "pode enviar" explícito do Lucas. Antes de criar, conferi pela API do GitHub
+que os 21 arquivos alterados estavam todos dentro de `submissions/lucas-coelho/` e que não havia conflito. Um único PR.
+
+**Correção de horário:** a versão anterior deste log dizia "~19h" para a conversa com o Lucas. Era estimativa minha e estava
+errada. O arquivo foi salvo às 18h22 (relógio do computador), e as horas acima vêm do relógio e do GitHub.
+
+**Estado final:** entrega concluída, aguardando retorno da G4. Qualquer ajuste daqui em diante entra como commit na mesma branch.
